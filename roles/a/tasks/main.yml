@@ -1,0 +1,3 @@
+- name: Do stuff
+  debug: msg="Hallo"
+- include: foo.yml

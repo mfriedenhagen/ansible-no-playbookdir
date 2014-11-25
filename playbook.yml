@@ -1,0 +1,8 @@
+---
+- name: Show playbook_dir
+  hosts: all
+  tasks:
+    - debug: var=playbook_dir
+  roles:
+    - a
+    - b
