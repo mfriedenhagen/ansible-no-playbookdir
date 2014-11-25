@@ -1,8 +1,11 @@
 Sample project for playbook_dir is not found for includes
 =========================================================
 
+Issue: https://github.com/ansible/ansible/issues/9618
+Located at https://github.com/mfriedenhagen/ansible-no-playbookdir
+
 Output of `ansible-playbook -i hosts -c local playbook.yml` with 1.7.2
-=======================================================================
+----------------------------------------------------------------------
 
 ```
     PLAY [Show playbook_dir] ****************************************************** 
@@ -35,8 +38,8 @@ Output of `ansible-playbook -i hosts -c local playbook.yml` with 1.7.2
 ```
 
 Reproduce with 1.8 devel (19606afe5f)
-=====================================
-Given you checked out `ansible` to `../ansible` *and* initialized submodules run:
+-------------------------------------
+Given you checked out `ansible` to `../ansible` *and* initialized submodules please run:
 
 ```
     virtualenv -p /usr/bin/python venv
@@ -59,7 +62,7 @@ Running: `ansible-playbook -i hosts -c local playbook.yml` now ends with:
 ``
 
 Environment
-===========
+-----------
 
 * OS: Mac OS X 10.10.1
 
